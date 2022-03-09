@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/bg_card.xml" value="0.155" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/card_back_details.xml" value="0.168" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_bluepin.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_btn_gamburger_normal.xml" value="0.155" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_btn_my_location_normal.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_call.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_delete.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_gentra.xml" value="0.155" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_path_99.xml" value="0.129" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ic_profile.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/layout_back_details.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/number_bg.xml" value="0.168" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/drawable/ripple_effect.xml" value="0.1325" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout-large/activity_maps.xml" value="0.25" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout-normal/activity_maps.xml" value="0.19895833333333332" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout-normal/activity_trip_details.xml" value="0.19895833333333332" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout-normal/activity_trip_history.xml" value="0.19895833333333332" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout-normal/nav_header.xml" value="0.19895833333333332" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout-normal/shimmer_placeholder_triphistory.xml" value="0.19895833333333332" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout-small/activity_maps.xml" value="1.25" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout/activity_maps.xml" value="0.75" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout/activity_trip_details.xml" value="0.22" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout/activity_trip_history.xml" value="0.25" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/layout/shimmer_placeholder_triphistory.xml" value="0.19895833333333332" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/menu/nav_menu.xml" value="0.19895833333333332" />
+        <entry key="..\:/ANDROID LEARINING/ANDROID(PROJECTS)/MyTaxi/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1325" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.3310225303292894" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

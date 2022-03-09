@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TripDetails"
+    android:background="#EBEBEB">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cardBtnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        android:layout_margin="20dp"
+        app:fabSize="mini"
+        app:borderWidth="0dp"
+        android:tint="@color/icon_color"
+        android:backgroundTint="@color/white"
+        />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/MaterialAlertDialog.Material3">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
+            app:title="@string/app_name">
+
+            <fragment
+                android:id="@+id/map2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+               />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_back_details"
+        android:padding="10dp"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/layout_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    android:background="@drawable/number_bg">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="50"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="22dp"
+                        android:background="#EFEDED"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="5dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="777"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AA"
+                        android:textSize="20sp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/tvCarName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Чёрный Chevrolet Malibu"
+                    android:textSize="14sp"
+                    android:layout_below="@id/layout_number"
+                    android:layout_marginTop="5dp"/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:src="@drawable/malibu"
+                 android:layout_alignParentEnd="true"
+                 android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tvCarName"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/viewColor"/>
+            <LinearLayout
+                android:id="@+id/root1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_below="@id/view1">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_redpin"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="улица Sharof Rashidov, Ташкент"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="RtlCompat"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/root2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/root1"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_bluepin"
+                    android:layout_gravity="center_vertical"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5a улица Асадуллы Ходжаева"
+                    android:textSize="15sp"
+                    android:textColor="@color/text_color"
+                    android:textAlignment="textStart"
+                    android:layout_gravity="center_vertical"
+                    tools:ignore="RtlCompat"
+                    android:textStyle="bold"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+
+   <LinearLayout
+       android:id="@+id/layout_info"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:layout_below="@id/root2">
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="0dp"
+           android:layout_height="70dp"
+           android:layout_weight="1"
+           android:backgroundTint="#FEF8E8"
+           app:cardCornerRadius="12dp"
+           android:layout_margin="10dp">
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="60dp"
+               android:layout_gravity="center|top"
+               android:background="#FEF8E8">
+
+               <ImageView
+                   android:id="@+id/imgQuesiton"
+                   android:layout_width="23dp"
+                   android:layout_height="23dp"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/ic_question" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="20dp"
+                   android:textStyle="normal"
+                   android:text="Помощь"
+                   android:textColor="#EDB118" />
+
+
+           </RelativeLayout>
+
+       </com.google.android.material.card.MaterialCardView>
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="0dp"
+           android:layout_height="70dp"
+           android:layout_weight="1"
+           android:backgroundTint="#ECF2FD"
+           app:cardCornerRadius="12dp"
+           android:layout_margin="10dp">
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="60dp"
+               android:layout_gravity="center|top"
+               android:background="#ECF2FD">
+
+               <ImageView
+                   android:id="@+id/imgRepeat"
+                   android:layout_width="23dp"
+                   android:layout_height="23dp"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/ic_repeat" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="20dp"
+                   android:text="Повторить"
+                   android:textColor="#3F7BEB"
+                   android:textStyle="normal"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerVertical="true"
+                   android:layout_centerHorizontal="true"/>
+
+
+
+           </RelativeLayout>
+
+       </com.google.android.material.card.MaterialCardView>
+       <com.google.android.material.card.MaterialCardView
+           android:layout_width="0dp"
+           android:layout_height="70dp"
+           android:layout_weight="1"
+           android:backgroundTint="#EEF9F2"
+           app:cardCornerRadius="12dp"
+           android:layout_margin="10dp">
+
+           <RelativeLayout
+               android:layout_width="wrap_content"
+               android:layout_height="60dp"
+               android:layout_gravity="center|top"
+               android:background="#EEF9F2">
+
+               <ImageView
+                   android:id="@+id/imgCall"
+                   android:layout_width="23dp"
+                   android:layout_height="23dp"
+                   android:layout_centerInParent="true"
+                   android:src="@drawable/ic_call" />
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerInParent="true"
+                   android:layout_marginTop="20dp"
+                   android:text="Помощь"
+                   android:textStyle="normal"
+                   android:textColor="#70B58C" />
+
+
+           </RelativeLayout>
+
+       </com.google.android.material.card.MaterialCardView>
+
+   </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_driverName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_info"
+                android:text="Водитель"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tv_driverName"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/viewColor"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgDriver"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/view2"
+                android:src="@drawable/profile2"/>
+            <TextView
+                android:id="@+id/driverFullName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sadriddin Abdurakhimov"
+                android:textSize="18sp"
+                android:layout_below="@id/view2"
+                android:layout_toEndOf="@id/imgDriver"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"/>
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Рейтинг:"
+                android:layout_below="@id/driverFullName"
+                android:layout_toEndOf="@id/imgDriver"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"/>
+            <ImageView
+                android:id="@+id/imgRating"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_below="@id/driverFullName"
+                android:layout_toEndOf="@id/tvRating"
+                android:src="@drawable/ic_rating"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"/>
+            <TextView
+                android:id="@+id/tvTrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Поездки:"
+                android:layout_below="@id/driverFullName"
+                android:layout_toEndOf="@id/imgRating"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/tvTrip2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 885"
+                android:layout_below="@id/driverFullName"
+                android:layout_toEndOf="@id/tvTrip"
+                android:layout_marginStart="20dp"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_commonDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imgDriver"
+                android:layout_marginTop="20dp"
+                android:text="Общие данные"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tv_commonDate"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/viewColor"/>
+            <TextView
+                android:id="@+id/tvRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Тариф"
+                android:layout_below="@id/view3"
+                android:textSize="15sp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvRate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Бизнес"
+                android:layout_below="@id/view3"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:id="@+id/tvPay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Способ оплаты"
+                android:layout_below="@id/tvRate"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvPay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Наличными"
+                android:layout_below="@id/tvRate2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_pay2"
+                android:layout_below="@id/tvRate2"
+                android:layout_toStartOf="@id/tvPay2"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"/>
+            <TextView
+                android:id="@+id/tvOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Заказ №"
+                android:layout_below="@id/tvPay"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvOrder2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3917866"
+                android:layout_below="@id/tvPay2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Дата и время поездки"
+                android:layout_below="@id/tvOrder"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="29 Август, 19:20"
+                android:layout_below="@id/tvOrder2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:id="@+id/tvTripDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Продолжительность поездки"
+                android:layout_below="@id/tvDate"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvTripDuration2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00:45"
+                android:layout_below="@id/tvDate2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+
+            <TextView
+                android:id="@+id/tv_costCalculation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTripDuration"
+                android:text="Расчёт стоимости"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tv_costCalculation"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/viewColor"/>
+            <TextView
+                android:id="@+id/tvMinimumAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Минимальная сумма"
+                android:layout_below="@id/view4"
+                android:textSize="15sp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvMinimumAmount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5 000 UZS"
+                android:layout_below="@id/view4"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:id="@+id/tv_Increased_demand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Повышенный спрос"
+                android:layout_below="@id/tvMinimumAmount"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tv_Increased_demand2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+3 000 UZS"
+                android:layout_below="@id/tvMinimumAmount2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_lightning"
+                android:layout_below="@id/tvMinimumAmount2"
+                android:layout_toStartOf="@id/tvPay2"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="0dp"/>
+            <TextView
+                android:id="@+id/tvTravelAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Сумма поездки"
+                android:layout_below="@id/tv_Increased_demand"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvTravelAmount2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="31 645 UZS"
+                android:layout_below="@id/tv_Increased_demand2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:id="@+id/tvPricePending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Цена ожидании"
+                android:layout_below="@id/tvTravelAmount"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvPricePending2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 UZS"
+                android:layout_below="@id/tvTravelAmount2"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentEnd="true"/>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/tvPricePending"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@color/viewColor"/>
+
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Итого"
+                android:layout_below="@id/view5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentStart="true"/>
+            <TextView
+                android:id="@+id/tvTotal2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="39 600 UZS"
+                android:layout_below="@id/view5"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginTop="7dp"
+                android:layout_alignParentEnd="true"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Удалить данные"
+                app:icon="@drawable/ic_delete"
+                app:iconGravity="textStart"
+                app:iconTint="#FF453A"
+                android:backgroundTint="#FFEAE9"
+                android:textColor="#FF453A"
+                app:cornerRadius="12dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="12dp"
+                android:layout_below="@id/tvTotal"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
