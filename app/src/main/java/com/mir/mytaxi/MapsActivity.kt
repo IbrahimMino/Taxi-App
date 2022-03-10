@@ -16,18 +16,23 @@ import android.os.Bundle
 import android.provider.Settings
 import android.util.Log
 import android.view.MenuItem
+import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import android.widget.LinearLayout
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.content.ContextCompat
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.api.GoogleApiClient
 import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.maps.*
 import com.google.android.gms.maps.model.*
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.mir.mytaxi.databinding.ActivityMapsBinding
 import java.lang.Exception
 import java.util.*
@@ -62,8 +67,6 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback,GoogleApiClient.Con
         mLocationClient = FusedLocationProviderClient(this)
         onClickView()
 
-
-
     }
 
 
@@ -93,15 +96,19 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback,GoogleApiClient.Con
             binding.drawerLayout.open()
         }
 
-        binding.cardWhere.setOnClickListener {
-            Toast.makeText(applicationContext, "Куда?", Toast.LENGTH_SHORT).show()
-        }
+
 
         binding.fabLocation.setOnClickListener {
             if (isGPSenable()){
                 getCurrentLoc()
             }
         }
+
+
+             binding.cardWhere.setOnClickListener {
+                 Toast.makeText(applicationContext, "Куда?", Toast.LENGTH_SHORT).show()
+             }
+
     }
          @SuppressLint("MissingPermission")
          private fun getCurrentLoc() {
